@@ -88,7 +88,7 @@ with tab1:
                 st.download_button(
                     label="导出",
                     data=csv,
-                    file_name='output.csv',
+                    file_name=f'({number1},{number2})[{string1}-{string2}].csv',
                     mime='text/csv',
                 )
 
