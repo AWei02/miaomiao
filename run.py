@@ -81,8 +81,8 @@ with tab1:
                 key = ",".join(selected_items)
                 st.write("关注点：", key)
 
-                # df = work(number1, number2, string1, string2, key)
-                df = pd.DataFrame(np.random.randn(8, 8))
+                df = work(number1, number2, string1, string2, key)
+                # df = pd.DataFrame(np.random.randn(8, 8))
 
                 csv = df.to_csv().encode('utf-8')
                 st.download_button(
